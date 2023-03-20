@@ -18,7 +18,7 @@
 
 <h3>Links</h3>
 <ul>
-    <li>Live site URL: <a href="https://julianastahelin.github.io/contact-form-exercise/">https://julianastahelin.github.io/contact-form-js-exercise/</a></li>
+    <li>Live site URL: <a href="https://julianastahelin.github.io/contact-form-js-exercise/">https://julianastahelin.github.io/contact-form-js-exercise/</a></li>
 </ul>
 
 <h2>My process</h2>
