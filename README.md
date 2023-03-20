@@ -1,4 +1,4 @@
-<h1>Contact form built using HTML, CSS and JS</h1>
+<h1>Contact form with validation in JS</h1>
 <p> This is a responsive contact form I coded in response to a challenge by DevQuest by <a href="https://github.com/devemdobro" target="_blank">Dev em Dobro</a>. The challenge is intended for intermediate JS practicing, as well as HTML and JS practicing. Design was provided in a Figma project. </p>
 
 <h2>Overview</h2>
