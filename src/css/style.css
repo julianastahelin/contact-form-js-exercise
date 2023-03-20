@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.form-container .text {
+    color: #ffffff;
+    max-width: 300px;
+}
+
+.form-container .text .title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.form-container .text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 11px;
+}
+
+.contact-form { 
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.contact-form .mandatory-input { 
+    width: 300px;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #000; 
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .mandatory-input.alert { 
+    border: 1px solid #F52E2E; 
+}
+
+.contact-form .mandatory-input.green { 
+    border: 1px solid #00C22B; 
+}
+
+.contact-form .mandatory-message {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    color: #F52E2E;
+    padding-bottom: 6px;
+    opacity: 0;
+}
+
+.contact-form .mandatory-message.alert {
+    opacity: 1;
+}
+
+.contact-form .mandatory-inputs-message { 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.contact-form .submit {
+    font-weight: 700;
+    font-size: 15px;
+    width: 300px;
+    background-color: #3CCC87;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact-form .submit:hover { 
+    opacity: 80%;
+}
+
