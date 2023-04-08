@@ -3,29 +3,29 @@ let mandatoryMessage = document.querySelectorAll('.mandatory-message');
 const submitBtn = document.querySelector('.submit');
 
 submitBtn.addEventListener('click', function (event) {
-    for (let i = 0; i < mandatoryInputs.length; i++) {
-        if (mandatoryInputs[i].value === "") {
-            mandatoryInputs[i].classList.add('alert');
-            mandatoryMessage[i].classList.add('alert');
+    mandatoryInputs.forEach((input, index) => {
+        if (input.value === "") {
+            input.classList.add('alert');
+            mandatoryMessage[index].classList.add('alert');
             event.preventDefault();
+        } else {
+            input.classList.remove('alert');
+            mandatoryMessage[index].classList.remove('alert');
         }
-        if (mandatoryInputs[i].value !== "") {
-            mandatoryInputs[i].classList.remove('alert');
-            mandatoryMessage[i].classList.remove('alert');
-        }
-    }
+    });
 }
 )
 
-for (let i = 0; i < mandatoryInputs.length; i++) {
-    mandatoryInputs[i].addEventListener("change", function () {
-        if (mandatoryInputs[i].value === "") {
-            mandatoryInputs[i].classList.remove('green');
-            mandatoryInputs[i].classList.add('alert');
-        }
-        if (mandatoryInputs[i].value !== "") {
-            mandatoryInputs[i].classList.add('green');
-            mandatoryMessage[i].classList.remove('alert');
+mandatoryInputs.forEach((input, index) => {
+    input.addEventListener("change", () => {
+        if (input.value === "") {
+            input.classList.remove('green');
+            input.classList.add('alert');
+            mandatoryMessage[index].classList.add('alert');
+        } else {
+            input.classList.remove('alert');
+            input.classList.add('green');
+            mandatoryMessage[index].classList.remove('alert');
         }
     })
-}
+})
