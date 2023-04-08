@@ -33,7 +33,7 @@
 <h3>What I practiced 💪🏽</h3>
 <ul>
     <li>Form validation with JS;</li>
-    <li>Using for loops in JS;</li>
+    <li>Using forEach loop in JS;</li>
     <li>Styling form inputs;</li>
     <li>Using CSS media queries for responsiveness.</li>
 </ul>
